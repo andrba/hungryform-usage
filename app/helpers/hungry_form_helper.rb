@@ -1,0 +1,2 @@
+module HungryFormHelper
+end

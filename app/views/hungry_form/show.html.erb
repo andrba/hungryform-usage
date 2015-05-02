@@ -1,0 +1,15 @@
+<div class="row wrapper">
+  <div class="col-xs-2">
+    <h4>Navigation</h4>
+    <ul class="nav nav-pills nav-stacked">
+      <% @form.pages.each do |page| %>
+        <li<%= ' class="active"'.html_safe if @form.current_page == page %>>
+          <%= hungry_link_to_page(@form, page) %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+  <div class="form col-xs-6">
+    <%= hungry_form_for(@form) %>
+  </div>
+</div>

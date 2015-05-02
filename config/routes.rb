@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  scope '/', as: :hungry_form do
+    get 'submitted' => 'hungry_form#submitted'
+    get '(:page)' => 'hungry_form#show'
+    post ':page' => 'hungry_form#update'
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

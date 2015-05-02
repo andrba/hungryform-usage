@@ -1,0 +1,13 @@
+// Place all the styles related to the hungry_form controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.wrapper {
+  padding: 20px;
+}
+
+.hungryform {
+  .has-error > label {
+    color: $state-danger-text;
+  }
+}
