@@ -7,7 +7,9 @@
 }
 
 .hungryform {
-  .has-error > label {
-    color: $state-danger-text;
+  .has-error {
+    & > label, .error {
+      color: $state-danger-text;
+    }
   }
 }
